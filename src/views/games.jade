@@ -1,0 +1,9 @@
+extends ./layout.jade
+
+block content
+    each game in games
+      .game
+        h2.game-name= game.gameName
+        .streams
+          each stream in game.streams
+            include ./partials/stream

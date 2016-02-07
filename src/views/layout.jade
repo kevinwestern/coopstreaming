@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    style.
+      * {
+        box-sizing: border-box;
+      }
+      h1, h2, h3, h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+      }
+      ul, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline;
+      }
+      body {
+        padding: 8px;
+      }
+      .streams {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .stream {
+        width: 480px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+      }
+      .justified {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sixteen-nine {
+        position: relative;
+      }
+      .sixteen-nine:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 56.25%;
+      }
+      .sixteen-nine-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      .stream-footer-name.twitch {
+        color: rgb(100, 65, 165);
+      }
+      header {
+        padding: 8px 0;
+      }
+      .header-a {
+        font-size: 18px;
+        padding: 8px;
+      }
+      .game {
+        margin-bottom: 16px;
+      }
+      .game-name {
+        font-size: 24px;
+        padding-bottom: 8px;
+      }
+  body
+    header
+      ul
+        li
+          a(href="/", class="header-a") Home
+        li
+          a(href="/games", class="header-a") Games
+    block content

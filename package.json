@@ -1,0 +1,25 @@
+{
+  "name": "coopstreams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "kevinwestern",
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "moment": "^2.11.0",
+    "normalize.css": "^3.0.3",
+    "restler": "^3.4.0",
+    "systemjs": "0.19.6"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.3"
+  },
+  "scripts": {
+    "tsc": "tsc -p src -w"
+  }
+}

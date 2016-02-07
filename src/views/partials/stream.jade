@@ -1,0 +1,9 @@
+.stream
+  .sixteen-nine
+    - var medium = stream.thumbnails.medium
+    a.sixteen-nine-content(href=stream.watchUrl, style="background-image: url(#{medium.url})")
+  .stream-footer
+    .justified
+      h3.stream-footer-name(class=stream.source)= stream.owner
+      span= stream.viewers
+    span= stream.gameName
